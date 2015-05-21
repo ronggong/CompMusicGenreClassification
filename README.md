@@ -13,7 +13,7 @@ change '/Users/gong/Documents/Library/gaia-master/src/bindings/pygaia/scripts/cl
 
 change outputFolder to a folder where you want to output the results  
 
-change jingjuFolder to your jingju audio file folder. The structure of this folder is jingjuFolder/artistFolder/audiofile  
+change jingjuFolder to your jingju audio file folder. The structure of this folder is jingjuFolder/artistFolder/audiofile. If this is not your audio file folder structure, change jingjuRecordingIDreader function in jingjuRecordingIDreader.py
 
 python main.py
 
