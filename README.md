@@ -2,9 +2,9 @@
 Classifier Jingju, indian, turkish music by machine learning
 
 ## Dependencies
-pycompmusic: https://github.com/MTG/pycompmusic
-essentia: https://github.com/MTG/essentia
-gaia2: https://github.com/MTG/gaia
+pycompmusic: https://github.com/MTG/pycompmusic  
+essentia: https://github.com/MTG/essentia  
+gaia2: https://github.com/MTG/gaia  
 
 ## Use
 In main.py  
