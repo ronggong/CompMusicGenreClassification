@@ -1,17 +1,20 @@
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('/Users/gong/Documents/Library/gaia-master/src/bindings/pygaia/scripts/classification')
+sys.path.append('../src')
+
 import recordingIDfetcher as fetcher
 import jingjuRecordingIDreader as reader
 import dumpFeaturesIntoJson as jsonDumper
 import convertJsonToSig as j2s
 import groundtruthMaker as gtMaker
-import urllib, json, yaml, sys
-
-sys.path.append('/Users/gong/Documents/Library/gaia-master/src/bindings/pygaia/scripts/classification')
+import urllib, json, yaml
 import train_model as tm
 
-# ----- main output folder
+# ----- folders
 outputFolder = "/Users/gong/Documents/MTG document/features"
+jingjuFolder = "/Users/gong/Documents/MTG document/Jingju arias/京剧之星"
 
 # ----- fetch carnatic, hindustani and makam recordingIDs
 carnaticRecordingIDs = fetcher.carnaticRecordingIDfetcher()
@@ -19,7 +22,6 @@ hindustaniRecordingIDs = fetcher.hindustaniRecordingIDfetcher()
 makamRecordingIDs = fetcher.makamRecordingIDfetcher()
 
 # ----- read jingju recordingIds
-jingjuFolder = "/Users/gong/Documents/MTG document/Jingju arias/京剧之星"
 jingjuRecordingIDs = reader.jingjuRecordingIDreader(jingjuFolder)
 
 # ----- filelist and groundtruth dictionaries
