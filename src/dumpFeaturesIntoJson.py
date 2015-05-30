@@ -9,6 +9,7 @@ def dumpFeaturesIntoJson(recordingID, jsonOutputFolder, genre):
     
         with open(outputFilename, 'w+') as outfile:
             json.dump(lowlevel, outfile)
+            
         return True
     except:
         return False

@@ -65,6 +65,6 @@ for jj in range(len(features)):
 
     plt.title(featuresName[jj])
     plt.xlabel("feature value")
-    plt.ylabel("amplitude")
+    plt.ylabel("count")
     plt.legend(loc = 'best')
     plt.show()
